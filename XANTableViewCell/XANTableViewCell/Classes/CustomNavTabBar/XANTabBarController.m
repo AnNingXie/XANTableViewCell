@@ -8,6 +8,7 @@
 
 #import "XANTabBarController.h"
 #import "XANHomeController.h"
+#import "XANMineController.h"
 #import "XANNavigationController.h"
 #import "XANPCH.h"
 @interface XANTabBarController ()
@@ -22,8 +23,8 @@
     XANHomeController *home=[[XANHomeController alloc]init];
     [self setUpChildViewController:home title:@"首页" imageName:@"homeIconNormal" selectedImageName:@"homeIconSelected"];
     //我的
-    XANHomeController *map=[[XANHomeController alloc]init];
-    [self setUpChildViewController:map title:@"我的" imageName:@"homeIconNormal" selectedImageName:@"homeIconSelected"];
+    XANMineController *mine=[[XANMineController alloc]init];
+    [self setUpChildViewController:mine title:@"我的" imageName:@"homeIconNormal" selectedImageName:@"homeIconSelected"];
 }
 
 /**
