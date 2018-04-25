@@ -17,6 +17,22 @@
 
 @implementation XANTabBarController
 
+/**
+ 只会调用一次
+ */
++(void)load{
+    //正常状态下文字颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont   systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor whiteColor]}   forState:UIControlStateNormal];
+    //文字选中颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont   systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor redColor]}   forState:UIControlStateSelected];
+    
+    //TabBar背景色
+    UIView *tabBarBackGroundColor=[[UIView alloc]init];
+    tabBarBackGroundColor.frame=CGRectMake(0, 0, KScreenWidth, TabbarHeight);
+    tabBarBackGroundColor.backgroundColor=XANRGBColor(0, 157, 145);
+    [[UITabBar appearance] insertSubview:tabBarBackGroundColor atIndex:0];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //首页
@@ -40,15 +56,6 @@
                       imageName:(NSString *)imageName
               selectedImageName:(NSString *)selectedImageName{
     childViewController.title=title;
-    //正常状态下文字颜色
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont   systemFontOfSize:10],NSForegroundColorAttributeName:[UIColor whiteColor]}   forState:UIControlStateNormal];
-    //文字选中颜色
-    self.tabBar.tintColor=[UIColor whiteColor];
-    //TabBar背景色
-    UIView *tabBarBackGroundColor=[[UIView alloc]init];
-    tabBarBackGroundColor.frame=CGRectMake(0, 0, KScreenWidth, TabbarHeight);
-    tabBarBackGroundColor.backgroundColor=XANRGBColor(0, 157, 145);
-    [[UITabBar appearance] insertSubview:tabBarBackGroundColor atIndex:0];
     
     //消除TabBar图标的渲染效果 是图片保持原图效果
     UIImage *imageNormal=[UIImage imageNamed:imageName];
