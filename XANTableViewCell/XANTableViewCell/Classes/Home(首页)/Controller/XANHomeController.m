@@ -4,7 +4,7 @@
 //
 //  Created by XAN on 2018/4/19.
 //  Copyright © 2018年 xieanning. All rights reserved.
-//
+//  自定义cell第一种方式  第二种见我的控制器
 
 #import "XANHomeController.h"
 #import "XANHomeTableViewCell.h"

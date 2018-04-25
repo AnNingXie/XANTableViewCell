@@ -38,6 +38,8 @@
 		04272A5F20886759004294D6 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04272A4820886759004294D6 /* UIView+WebCacheOperation.m */; };
 		04272A6020886759004294D6 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04272A4920886759004294D6 /* UIView+WebCache.m */; };
 		04272A6120886759004294D6 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04272A4D20886759004294D6 /* UIButton+WebCache.m */; };
+		0494B8192090683300A4D42B /* XANMeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494B8182090683300A4D42B /* XANMeStatus.m */; };
+		0494B81C2090684400A4D42B /* XANMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494B81B2090684400A4D42B /* XANMeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,10 @@
 		04272A4C20886759004294D6 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		04272A4D20886759004294D6 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		04272A4E20886759004294D6 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		0494B8172090683300A4D42B /* XANMeStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XANMeStatus.h; sourceTree = "<group>"; };
+		0494B8182090683300A4D42B /* XANMeStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XANMeStatus.m; sourceTree = "<group>"; };
+		0494B81A2090684400A4D42B /* XANMeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XANMeTableViewCell.h; sourceTree = "<group>"; };
+		0494B81B2090684400A4D42B /* XANMeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XANMeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				04272A142088421B004294D6 /* Controller */,
+				0494B8162090677F00A4D42B /* Model */,
+				0494B8152090677400A4D42B /* View */,
 			);
 			path = "Mine(我的)";
 			sourceTree = "<group>";
@@ -312,6 +320,24 @@
 			children = (
 			);
 			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		0494B8152090677400A4D42B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0494B81A2090684400A4D42B /* XANMeTableViewCell.h */,
+				0494B81B2090684400A4D42B /* XANMeTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0494B8162090677F00A4D42B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0494B8172090683300A4D42B /* XANMeStatus.h */,
+				0494B8182090683300A4D42B /* XANMeStatus.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,7 +433,9 @@
 				04272A0820884007004294D6 /* XANNavigationController.m in Sources */,
 				04272A5D20886759004294D6 /* NSImage+WebCache.m in Sources */,
 				04272A1F208862E9004294D6 /* XANHomeStatus.m in Sources */,
+				0494B8192090683300A4D42B /* XANMeStatus.m in Sources */,
 				04272A0920884007004294D6 /* XANTabBarController.m in Sources */,
+				0494B81C2090684400A4D42B /* XANMeTableViewCell.m in Sources */,
 				04272A4F20886759004294D6 /* UIImage+WebP.m in Sources */,
 				04272A5620886759004294D6 /* UIImage+MultiFormat.m in Sources */,
 				04272A5520886759004294D6 /* UIImage+GIF.m in Sources */,
